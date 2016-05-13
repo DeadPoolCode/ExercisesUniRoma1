@@ -1,0 +1,5 @@
+.idea
+.DS_*
+*.DS_*
+*.iml
+*.class
