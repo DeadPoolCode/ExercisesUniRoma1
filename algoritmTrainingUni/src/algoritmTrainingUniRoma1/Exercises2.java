@@ -17,6 +17,7 @@ public class Exercises2 {
 	/**
 	 * Qualche piccola nota.
 	 * 1)Le stringhe le passiamo come parametro, altrimenti il metodo non è testabile.
+	 * 2)Non mi piacciono le funzioni che ritornano void, prova a ritornare i valori e stampali nel main.
 	 * 2)Perchè il test fallisce se passo delle stringhe null? Come possiamo evitare questa situazione
 	 * evitando di aggiungere anche un solo carattere al codice? Ragionaci! :-)
 	 * @param text
