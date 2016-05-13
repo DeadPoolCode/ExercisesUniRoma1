@@ -14,7 +14,17 @@ By Carlo Giordano
 
 public class Exercises2 {
 
-	private static void exercises() {
+	/**
+	 * Qualche piccola nota.
+	 * 1)Le stringhe le passiamo come parametro, altrimenti il metodo non è testabile.
+	 * 2)Non mi piacciono le funzioni che ritornano void, prova a ritornare i valori e stampali nel main.
+	 * 2)Perchè il test fallisce se passo delle stringhe null? Come possiamo evitare questa situazione
+	 * evitando di aggiungere anche un solo carattere al codice? Ragionaci! :-)
+	 * @param text
+     */
+	private static void exercises(String text) {
+
+		if(text.length() == 0 || text == null) return;
 
 		// count number vocal
 		int count_a = 0;
@@ -30,7 +40,6 @@ public class Exercises2 {
 		char o = 'o';
 		char u = 'u';
 
-		String text = "mi illumino di immenso";
 
 		for (int y = 0; y < text.length(); y++) {
 
@@ -53,8 +62,18 @@ public class Exercises2 {
 
 	public static void main(String args[]) {
 
-		exercises();
 
+		System.out.println("I test - dati esercizio");
+		String text = "mi illumino di immenso";
+		exercises(text);
+
+		System.out.println("II test - dati esercizio");
+		 text = "";
+		exercises(text);
+
+		System.out.println("I test - dati esercizio");
+		text = null;
+		exercises(text);
 	}
 
 }
